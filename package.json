@@ -1,0 +1,28 @@
+{
+  "name": "eat-da-burger",
+  "version": "1.0.0",
+  "description": "Burger App",
+  "main": "server.js",
+  "scripts": {
+    "test": "node server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chas0n2/Eat-Da-Burger.git"
+  },
+  "author": "Chason Law",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chas0n2/Eat-Da-Burger/issues"
+  },
+  "homepage": "https://github.com/chas0n2/Eat-Da-Burger#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "handlebars": "^4.5.3",
+    "method-override": "^3.0.0",
+    "mysql": "^2.17.1"
+  }
+}
