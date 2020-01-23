@@ -1,16 +1,16 @@
 var connection = require("./connection");
 
 var orm = {
-    all: function(tableInput, cb) {
+    all: function(tableInput) {
         var queryString = "SELECT * FROM ??";
         connection.query(queryString, [tableInput], function(err, result) {
             if (err) {
                 throw err;
             }
-            cb(result)
+            return result
         });
     },
-    create: function(tableInput, columnInput, val, cb) {
+    create: function(tableInput, columnInput, val) {
         var queryString = "INSERT INTO ?? (??) VALUES (?)";
 
         console.log("queryString: ", queryString)
@@ -19,10 +19,10 @@ var orm = {
             if (err) {
                 throw err;
             }
-            cb(result)
+            return result
         });
     },
-    update: function(tableInput, columnInput, val, id, cb) {
+    update: function(tableInput, columnInput, val, id) {
         console.log('val: ', val)
         id = parseInt(id)
         val = parseInt(val)
@@ -33,7 +33,7 @@ var orm = {
                 console.log('this.sql: ', this.sql)
                 throw err;
             }
-            cb(result)
+            return result
         });
     }
 };
