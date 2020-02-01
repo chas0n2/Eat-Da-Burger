@@ -4,9 +4,6 @@ var express = require("express");
 var PORT = process.env.PORT || 8080;
 
 var app = express();
-var db = require("./models/burgers");
-
-var connection = require("./config/connection");
 
 
 app.use(express.static("public"));
@@ -16,7 +13,7 @@ app.use(express.json());
 
 //handlebar setup
 var exphbs = require("express-handlebars");
-app.engine("handlebars", exphbs({ defaultLayout: null }));
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
 // import routes for server access
