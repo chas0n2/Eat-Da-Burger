@@ -1,0 +1,10 @@
+.header {
+    text-align: center;
+}
+
+.burger {
+    position: relative;
+    width: 250px;
+    height: 200px;
+    left: 550px;
+}
