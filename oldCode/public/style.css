@@ -1,6 +1,11 @@
+body {
+    image-rendering: url(scaryburger.jpg);
+}
+
 .header {
     text-align: center;
 }
+
 
 .burger {
     position: relative;
