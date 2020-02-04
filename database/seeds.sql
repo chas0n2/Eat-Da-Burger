@@ -1,1 +1,0 @@
-lINSERT INTO burgers (burger_name, devoured) VALUES ('Bacon Burger', FALSE), ('Everything Burger', FALSE)
